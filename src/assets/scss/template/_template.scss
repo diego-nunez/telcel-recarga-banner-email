@@ -105,14 +105,27 @@ h2{
   -moz-border-radius: 3px !important;
   -ms-border-radius: 3px !important;
   -o-border-radius: 3px !important;
-  background-color: #F2F7F9;
+  background-color: #E5F0FA;
 }
 
 .info-alert .bar{
-  background-color: #00529B;
+  background-color: #51789D;
 	height: 100%;
 	width: 5px;
 	position: absolute;
 	left: .4px;
 	top: 0;
+}
+.footer{
+  background-color: $ice-blue;
+}
+.footer p{
+  color: #6B6B6B;
+}
+
+hr{ 
+  height: 1px;
+  color: rgba(0,0,0,0.1);
+  background-color: rgba(0,0,0,0.1);
+  border: none;
 }
