@@ -6,6 +6,7 @@ body,
 html, 
 .body {
   background: #f3f3f3 !important;
+  font-size: 14px;
 }
 
 .container.header {
@@ -56,4 +57,62 @@ table.button.google table td {
 
 .wrapper.secondary {
   background: #f3f3f3;
+}
+
+img.inline{
+  display: inline-block;
+}
+
+td{
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+}
+
+h2{
+  margin-bottom: 0;
+}
+
+.banner{
+  background-color: #8FC8E3;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  padding-left: 8px;
+}
+
+.banner p{
+  color: #fff;
+}
+
+.blue{
+  color: $blue;
+}
+
+.f-18{
+  font-size: 18px;
+}
+
+.info-alert p,.info-alert th{
+  padding-bottom: 0;
+}
+
+.info-alert{
+  border-radius: 3px !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  -ms-border-radius: 3px !important;
+  -o-border-radius: 3px !important;
+  background-color: #F2F7F9;
+}
+
+.info-alert .bar{
+  background-color: #00529B;
+	height: 100%;
+	width: 5px;
+	position: absolute;
+	left: .4px;
+	top: 0;
 }
