@@ -19,7 +19,7 @@ html,
 
 // Full Width Headers
 .header {
-  background: #8a8a8a;
+  background: #F2F7F9;
 }
 
 .header .columns {
@@ -80,7 +80,6 @@ h2{
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-  padding-left: 8px;
 }
 
 .banner p{
@@ -108,6 +107,19 @@ h2{
   background-color: #E5F0FA;
 }
 
+.space-right img{
+  padding-right: 8px;
+}
+
+.info-alert p{
+  padding: 16px;
+  margin-bottom: 0;
+}
+
+.info-alert img{
+  padding: 16px;
+}
+
 .info-alert .bar{
   background-color: #51789D;
 	height: 100%;
@@ -128,4 +140,13 @@ hr{
   color: rgba(0,0,0,0.1);
   background-color: rgba(0,0,0,0.1);
   border: none;
+}
+
+.middle > *{
+  display: inline;
+  vertical-align: middle;
+}
+
+.m-0{
+  margin-bottom: 0;
 }
