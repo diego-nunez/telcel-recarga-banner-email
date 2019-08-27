@@ -94,7 +94,7 @@ h2{
   font-size: 18px;
 }
 
-.info-alert p,.info-alert th{
+.info-alert th{
   padding-bottom: 0;
 }
 
@@ -105,6 +105,7 @@ h2{
   -ms-border-radius: 3px !important;
   -o-border-radius: 3px !important;
   background-color: #E5F0FA;
+  border-left: solid 8px #51789D;
 }
 
 .space-right img{
@@ -112,27 +113,33 @@ h2{
 }
 
 .info-alert p{
-  padding: 16px;
+  padding: 16px 16px 16px 8px;
   margin-bottom: 0;
 }
 
 .info-alert img{
-  padding: 16px;
+  padding: 16px 8px 16px 8px;
 }
 
-.info-alert .bar{
-  background-color: #51789D;
-	height: 100%;
-	width: 5px;
-	position: absolute;
-	left: .4px;
-	top: 0;
-}
 .footer{
   background-color: $ice-blue;
 }
 .footer p{
-  color: #6B6B6B;
+  color: #6B6B6B !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+.footer p > a.unlink,footer p > a.unlink:hover,footer p > a.unlink:active,footer p > a.unlink:focus{
+  color: #6B6B6B !important;
+  text-decoration: none !important;
+  cursor: default !important;
+}
+
+a.unlink,a.unlink:hover,a.unlink:active,a.unlink:focus{
+  color: $black !important;
+  text-decoration: none !important;
+  cursor: default !important;
 }
 
 hr{ 
@@ -149,4 +156,8 @@ hr{
 
 .m-0{
   margin-bottom: 0;
+}
+
+a.link{
+  color: #1173ce;
 }
