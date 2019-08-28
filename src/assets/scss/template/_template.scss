@@ -5,12 +5,8 @@
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  background: $body-bg !important;
   font-size: 14px;
-}
-
-.container.header {
-  background: #f3f3f3;
 }
 
 .body-drip {
@@ -160,4 +156,8 @@ hr{
 
 a.link{
   color: #1173ce;
+}
+
+.pb-0{
+  padding-bottom: 0 !important;
 }
