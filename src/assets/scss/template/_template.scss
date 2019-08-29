@@ -110,11 +110,6 @@ h2{
 
 .info-alert .text-container p.alert-text{
   margin-bottom: 0;
-  padding: 16px 16px 16px 8px !important;
-}
-
-.info-alert img{
-  padding: 16px 8px 16px 8px;
 }
 
 .footer{
@@ -160,4 +155,8 @@ a.link{
 
 .pb-0, .pb-0 > td{
   padding-bottom: 0 !important;
+}
+
+.callout-inner.primary{
+  background-color: #E5F0FA;
 }
