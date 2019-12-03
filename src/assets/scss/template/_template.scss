@@ -76,10 +76,9 @@ h2{
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
-}
-
-.banner p{
-  color: #fff;
+  p{
+    color: #fff;
+  }
 }
 
 .blue{
@@ -115,10 +114,18 @@ h2{
 .footer{
   background-color: $ice-blue;
 }
-.footer p{
-  color: #6B6B6B !important;
-  text-decoration: none !important;
-  cursor: default !important;
+.footer{
+  p{
+    color: #6B6B6B;
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+.rm-pb-th{
+  th{
+    padding-bottom: 0;
+  }
 }
 
 .footer p > a.unlink,footer p > a.unlink:hover,footer p > a.unlink:active,footer p > a.unlink:focus{
