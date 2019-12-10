@@ -1,6 +1,6 @@
 ---
 layout: index-layout
-subject: Recarga programada
+subject: Cancelación de compra programada de paquete
 ---
 
 <spacer size="32"></spacer>
@@ -27,38 +27,38 @@ subject: Recarga programada
 
   <row>
     <columns large="10" small="12" class="large-offset-1">
-      <h2 class="blue">Gracias por usar el servicio de </h2>
-      <h2 class="blue"><strong>Recarga Amigo Entretenimiento</strong> en línea</h2>
+      <h2 class="blue">Gracias por utilizar el servicio de </h2>
+      <h2 class="blue"><strong>compra de paquetes</strong> de Mi Telcel</h2>
       <spacer size="16"></spacer>
     </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
 
-  <row>
+  <!-- <row>
     <columns large="10" small="12" class="large-offset-1" tabindex="0">
-      <p><strong>La Recarga Amigo Entretenimiento estará disponible inmediatamente para su uso.</strong></p>
+      <p>Tu paquete ya está disponible, puedes utilizarlo inmediatamente.</p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
-  </row>
+  </row> -->
 
   <row>
     <columns large="10" small="12" class="large-offset-1" tabindex="0">
-      <p>Ahorra tiempo con la funcionalidad de <strong>"Recarga programada".</strong></p>
-      <p>Sólo elige la cantidad y la frecuencia de la Recarga Amigo Entretenimiento y nosotros hacemos el resto.</p>
+      <p>La cancelación de la <strong>Compra programada</strong> de tu paquete se realizó con éxito.</p>
+      <p>Para ahorrar tiempo en futuras compras, te recomendamos activar la <strong>Compra programada</strong>.</p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
 
   <spacer size="16"></spacer>
 
-  <row>
+  <row tabindex="0">
     <columns small="12" large="9" class="large-offset-2">
       <h3><strong>Detalles de la transacción:</strong></h3>
     </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
 
-  <row>
+  <!-- <row>
     <columns large="4" small="6" class="large-offset-2">
       <p aria-describedby="numero"><strong>Número Telcel</strong></p>
       <p aria-describedby="monto"><strong>Monto</strong></p>
@@ -73,6 +73,47 @@ subject: Recarga programada
           src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/tarjeta-visa.png" alt="Tarjeta visa"
           class="inline" /> **** 3456</p>
     </columns>
+  </row> -->
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="numero"><strong>Número Telcel</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="numero">55&nbsp;&zwj;1234&nbsp;&zwj;5678</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
+  </row>
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="monto"><strong>Monto</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="monto"><strong>$200</strong></p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
+  </row>
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="vigencia"><strong>Vigencia</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="vigencia">7 días</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
+  </row>
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p class="m-0" aria-describedby="forma-pago"><strong>Forma de pago</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p class="middle m-0" id="forma-pago"> <img
+          src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/tarjeta-visa.png" alt="Tarjeta visa"
+          class="inline" /> **** 3456</p>
+    </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
 
@@ -83,8 +124,8 @@ subject: Recarga programada
     <columns large="1" class="show-for-large"></columns>
   </row>
 
-  <row>
-    <columns large="4" small="6" class="large-offset-2" tabindex="0">
+  <!-- <row tabindex="0">
+    <columns large="4" small="6" class="large-offset-2">
       <p aria-describedby="folio"><strong>Folio Telcel</strong></p>
       <p aria-describedby="order"><strong>No. de orden Vesta</strong></p>
       <p aria-describedby="fecha"><strong>Fecha y hora</strong></p>
@@ -95,7 +136,37 @@ subject: Recarga programada
       <p id="fecha">31/12/2018 12:21 hrs</p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
+  </row> -->
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="folio"><strong>Folio Telcel</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="folio">#&zwj;1234567890</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
   </row>
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="order"><strong>No. de orden Vesta</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="orden">#&zwj;0987654321</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
+  </row>
+
+  <row tabindex="0" class="rm-pb-th">
+      <columns large="4" small="6" class="large-offset-2">
+        <p aria-describedby="fecha"><strong>Fecha y hora</strong></p>
+      </columns>
+      <columns large="5" small="6">
+        <p id="fecha">31/12/2018 12:21 hrs</p>
+      </columns>
+      <columns large="1" class="show-for-large"></columns>
+    </row>
 
   <row>
     <columns small="12" large="9" class="large-offset-2">
@@ -115,16 +186,11 @@ subject: Recarga programada
             </center>
           </columns>
 
-          <columns small="11" class="text-container" tabindex="0">
+          <columns small="11" class="text-container" tabindex="0" role="alert">
             <p class="alert-text">
-              Todos los pagos realizados en línea con tarjeta de crédito
-              o débido son procesados por <strong>Vesta Corporation</strong> con
-              domicilio en <a href="#" class="unlink">11950 SW Garde Place, Portland, OR, 97223.</a>
-              Para cualquier aclaración con relación al cargo realizado
-              a tu tarjeta, comunícate sin costo al <strong>800&nbsp;&zwj;120&nbsp;&zwj;0006</strong> o envía un
-              correo electrónico a <strong>ayuda.pagos.telcel@trustvesta&zwj;.com</strong>
-              indicando el número de orden Vesta proporcionado en esta
-              confirmación.
+              Importante en caso de no haber <strong>solicitado la cancelación de la compra programada </strong>indicado en esta confirmación, contacta a un
+              representante de Atención a Clientes de Vesta marcando sin costo al 800 120 0006 o envía un correo electrónico a
+              ayuda.pagos.telcel@trustvesta.com y proporciona el No. de orden Vesta.
             </p>
           </columns>
 
@@ -140,13 +206,44 @@ subject: Recarga programada
   <row>
     <columns small="12">
       <center class="show-for-large">
-          <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/banner-desktop.png" alt="Recarga desde tu celular" />
+        <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/banner-desktop.png"
+          alt="Recarga ahora con tu tarjeta de crédito o débito" />
       </center>
       <center class="hide-for-large">
-          <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/banner-mobile.png" alt="Recarga desde tu celular" />
+        <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/banner-mobile.png"
+          alt="Recarga ahora con tu tarjeta de crédito o débito" />
       </center>
     </columns>
   </row>
+  <!-- <row class="banner" style="max-width: 500px;margin: 0 auto;">
+      <columns large="6" class="show-for-large pb-0" valign="bottom">
+        <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/recarga-tarjeta.png"
+          alt="Recarga desde tu celular" class="float-center" />
+      </columns>
+      <columns small="12" large="6" class="small-offset-1" tabindex="0">
+        <spacer size="16"></spacer>
+        <p class="f-18">Realiza <strong>recargas de saldo</strong> </p>
+        <p>con tu <strong>tarjeta de crédito o débito</strong></p>
+        <span class="space-right">
+          <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/visa.png" alt="Tarjeta visa"
+            class="inline" />
+          <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/mcard.png" alt="Tarjeta mastercard"
+            class="inline" />
+          <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/amex.png" alt="Tarjeta american express"
+            class="inline" />
+        </span>
+
+        <spacer size="16"></spacer>
+
+        <button href="#" class="radius">Recargar saldo</button>
+      </columns>
+      <columns small="12" class="hide-for-large">
+        <center>
+          <img src="http://ux.gluo.mx/ux/projects/mitelcel-masivo/img/email/recarga-tarjeta.png"
+            alt="Recarga desde tu celular" />
+        </center>
+      </columns>
+  </row> -->
 
   <spacer size="32"></spacer>
 
@@ -175,7 +272,7 @@ subject: Recarga programada
     <columns large="1" class="show-for-large"></columns>
   </row>
 
-  <row class="footer">
+  <!-- <row class="footer">
     <columns small="12" large="10" class="large-offset-1">
       <p class="text-center" tabindex="0">
         Telcel nunca te pedirá que reveles, verifiques ni compartas tu contraseña
@@ -197,14 +294,16 @@ subject: Recarga programada
       <hr />
     </columns>
     <columns large="1" class="show-for-large"></columns>
-  </row>
+  </row> -->
 
   <row class="footer">
-    <columns large="10" small="12" class="large-offset-1" tabindex="0">
-      <p class="text-center">
-        <a href="#" class="unlink">&copy; 2019 Radiomovil Dipsa S.A. de C.V. Lago Zurich 245, Plaza Carso,
+    <columns large="10" small="12" class="large-offset-1">
+      <p class="text-center" tabindex="0">
+        <!-- <a href="#" class="unlink">&copy; 2019 Radiomovil Dipsa S.A. de C.V. Lago Zurich 245, Plaza Carso,
           Edificio Telcel, Col. Ampliación Granada, Delegación Miguel Hidalgo,
-          C.P. 11529, Distrito Federal, México. Todos los derechos reservados.</a>
+          C.P. 11529, Distrito Federal, México. Todos los derechos reservados.</a> -->
+          Consulta nuestro aviso de privacidad en www.mitelcel.com/privacidad 2019 Radiomóvil Dipsa S.A. de C.V. Todos los
+          derechos reservados. Este mensaje fue generado ppr un sistema automtizado. Por favor, no respondas a este mensaje.
       </p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
