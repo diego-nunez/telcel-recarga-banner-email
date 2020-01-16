@@ -99,8 +99,8 @@ h2{
   -moz-border-radius: 3px !important;
   -ms-border-radius: 3px !important;
   -o-border-radius: 3px !important;
-  background-color: #E5F0FA;
-  border-left: solid 8px #51789D;
+  background-color: #f2f7f9;
+  border-left: solid 8px $blue;
 }
 
 .space-right img{
@@ -157,15 +157,21 @@ hr{
 }
 
 a.link{
-  color: #1173ce;
+  color: #0071D1;
 }
 
 .pb-0, .pb-0 > td{
   padding-bottom: 0 !important;
 }
-
+table.callout{
+  border-collapse: initial;
+}
 th.callout-inner.primary {
-  background-color: #E5F0FA;
-  border: none;
+  background-color: #f2f7f9;
+  border: solid 1px #dde6ee;
+  border-radius: 4px;
   color: #222222;
+}
+.pt-48{
+  padding-top: 48px !important;
 }
