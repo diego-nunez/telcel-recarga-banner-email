@@ -1,6 +1,6 @@
 ---
 layout: index-layout
-subject: Recarga de saldo programada con tarjeta guardada
+subject: Recarga de saldo
 ---
 
 <spacer size="32"></spacer>
@@ -18,12 +18,12 @@ subject: Recarga de saldo programada con tarjeta guardada
 
   <spacer size="24"></spacer>
 
-  <row>
+  <!-- <row>
     <columns large="10" small="12" class="large-offset-1">
       <h2 class="blue"><strong>¡Hola, Roberto!</strong></h2>
     </columns>
     <columns large="1" class="show-for-large"></columns>
-  </row>
+  </row> -->
 
   <row>
     <columns large="10" small="12" class="large-offset-1">
@@ -36,8 +36,15 @@ subject: Recarga de saldo programada con tarjeta guardada
 
   <row>
     <columns large="10" small="12" class="large-offset-1" tabindex="0">
-        <p>La <strong>recarga de saldo programada</strong> se activó con éxito. Realizaremos el cargo automático recurrente a la
-        tarjeta de crédito/débito que guardaste</p>
+        <p>Tu saldo está disponible para utilizarlo inmediatamente.</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
+  </row>
+
+  <row>
+    <columns large="10" small="12" class="large-offset-1" tabindex="0">
+      <p>Ahorra tiempo activando la <strong>recarga de saldo programada</strong> con tu tarjeta de crédito/débito. Solo elige
+        el monto de la recarga y la frecuencia que deseas, nosotros haremos el resto.</p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
@@ -51,29 +58,22 @@ subject: Recarga de saldo programada con tarjeta guardada
     <columns large="1" class="show-for-large"></columns>
   </row>
 
-  <!-- <row>
-    <columns large="4" small="6" class="large-offset-2">
-      <p aria-describedby="numero"><strong>Número Telcel</strong></p>
-      <p aria-describedby="monto"><strong>Monto</strong></p>
-      <p aria-describedby="vigencia"><strong>Vigencia</strong></p>
-      <p aria-describedby="forma-pago"><strong>Forma de pago</strong></p>
-    </columns>
-    <columns large="5" small="6">
-      <p id="numero">55&nbsp;&zwj;1234&nbsp;&zwj;5678</p>
-      <p id="monto"><strong>$200</strong></p>
-      <p id="vigencia">7 días</p>
-      <p class="middle m-0" id="forma-pago"> <img
-          src="http://img1.telcel.com/mitelcel/mailing/img/tarjeta-visa.png" alt="Tarjeta visa"
-          class="inline" /> **** 3456</p>
-    </columns>
-  </row> -->
-
   <row tabindex="0" class="rm-pb-th">
     <columns large="4" small="6" class="large-offset-2">
       <p aria-describedby="numero"><strong>Número Telcel</strong></p>
     </columns>
     <columns large="5" small="6">
       <p id="numero">55&nbsp;&zwj;1234&nbsp;&zwj;5678</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
+  </row>
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="paquete"><strong>Paquete</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="paquete"><strong>Entretenimiento</strong></p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
@@ -117,7 +117,7 @@ subject: Recarga de saldo programada con tarjeta guardada
     <columns large="1" class="show-for-large"></columns>
   </row>
 
-  <row class="rm-pb-th">
+  <!-- <row class="rm-pb-th">
     <columns small="1" large="1" class="large-offset-2" valign="middle">
       <center>
           <img src="http://img1.telcel.com/mitelcel/mailing/img/reload.png" alt="Imagen reactivación">
@@ -128,6 +128,16 @@ subject: Recarga de saldo programada con tarjeta guardada
       <p>Semanal, cada lunes.</p>
     </columns>
     <columns large="1" class="show-for-large"></columns>
+  </row> -->
+
+  <row tabindex="0" class="rm-pb-th">
+    <columns large="4" small="6" class="large-offset-2">
+      <p aria-describedby="email"><strong>Correo electrónico</strong></p>
+    </columns>
+    <columns large="5" small="6">
+      <p id="email">correo@dominio.com</p>
+    </columns>
+    <columns large="1" class="show-for-large"></columns>
   </row>
 
   <row>
@@ -136,20 +146,6 @@ subject: Recarga de saldo programada con tarjeta guardada
     </columns>
     <columns large="1" class="show-for-large"></columns>
   </row>
-
-  <!-- <row tabindex="0">
-    <columns large="4" small="6" class="large-offset-2">
-      <p aria-describedby="folio"><strong>Folio Telcel</strong></p>
-      <p aria-describedby="order"><strong>No. de orden Vesta</strong></p>
-      <p aria-describedby="fecha"><strong>Fecha y hora</strong></p>
-    </columns>
-    <columns large="5" small="6">
-      <p id="folio">#&zwj;1234567890</p>
-      <p id="orden">#&zwj;0987654321</p>
-      <p id="fecha">31/12/2018 12:21 hrs</p>
-    </columns>
-    <columns large="1" class="show-for-large"></columns>
-  </row> -->
 
   <row tabindex="0" class="rm-pb-th">
     <columns large="4" small="6" class="large-offset-2">
@@ -189,7 +185,7 @@ subject: Recarga de saldo programada con tarjeta guardada
   </row>
 
   <row>
-    <columns small="12" large="11" class="large-offset-1">
+    <columns small="12" large="10" class="large-offset-1">
       <callout class="primary info-alert">
         <row>
           <columns small="1" class="pt-48">
@@ -227,7 +223,7 @@ subject: Recarga de saldo programada con tarjeta guardada
         <a href="#" class="hide-for-large">
           <!-- Se va reemplazar todavia no nos pasan la imagen -->
           <center>
-            <img src="../assets/img/Banner_Mobile.png" alt="Activa tu paquete de internet usando tu saldo o tu tarjeta de crédito/débito"/>
+            <img src="../assets/img/Banner_Mobile.png" alt="Activa tu paquete de internet usando tu saldo o tu tarjeta de crédito/débito" />
           </center>
         </a>
     </columns>
