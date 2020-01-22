@@ -1,0 +1,173 @@
+---
+subject: Ficha de pago en establecimiento de conveniencia
+---
+<spacer size="32"></spacer>
+<container class="file-container">
+    <row>
+        <columns large="3" small="12" class="pt-48">
+            <img src="../assets/img/logo-lg.png" alt="Encabezado Telcel" class="float-center">
+        </columns>
+        <columns large="8" small="12" class="show-for-large"></columns>
+    </row>
+    <spacer size="8"></spacer>
+    <row>
+        <columns large="10" small="12" class="large-offset-1">
+            <h1 class="blue"><strong>Ficha de pago</strong></h1>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+
+    <row class="collapse header">
+        <columns large="10" small="12" class="large-offset-1 data" style="padding-left: 44px;">
+            <p class="text-center m-0">
+                N&uacute;mero de &oacute;rden: <strong>00000000</strong>
+            </p>
+            <p class="text-center m-0">
+                Fecha y hora: <strong>16-01-2020</strong>
+            </p>
+            <p class="text-center m-0">
+                Correo del cliente: <strong>correo@prueba.com</strong>
+        </columns>
+        
+    </row>
+    <spacer size="8"></spacer>
+    <row>
+        <columns large="10" small="12" class="large-offset-1">
+            <h3>Beneficiario</h3>
+            <h3><strong>OPENPAY S.A.P.I. de C.V.</strong></h3>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row>
+        <columns small="12" large="10" class="large-offset-1">
+            <callout class="callout-date">
+                <row>
+                    <columns large="1" class="show-for-large"></columns>
+                    <columns small="12" large="5" class="br-right pb-0" valign="middle">
+                        <h3 class="text-left">Fecha l&iacute;mite de pago:</h3>
+                        <h3 class="text-left"><strong>30 de septiembre de 2018</strong></h3>
+                    </columns>
+                    <columns large="2" class="show-for-large"></columns>
+                    <columns small="12" large="5" class="pb-0" valign="middle">
+                        <h3 class="text-left">Total a pagar/MXN:</h3 class="text-center">
+                        <h3 class="text-left"><strong>$100,000.00 MXN</strong></h3>
+                    </columns>
+                </row>
+            </callout>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row>
+        <columns small="12" large="11" class="large-offset-1">
+            <hr />
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row>
+        <columns small="12" large="10" class="large-offset-1">
+            <h4><strong>Detalles de compra</strong></h4>
+            <row tabindex="0">
+                <columns large="10" class="product">
+                    <p id="descripcion">
+                        Huawei Nova 3, PAR-LX9, Negro, 64 GB, Plan de renta, Incluye regalo: Audífonos
+                    </p>
+                </columns>
+                <columns large="1" class="product">
+                    <p id="costo" class="text-right">
+                        <strong>$10,999.00</strong>
+                    </p>
+                </columns>
+            </row>
+            <row tabindex="0">
+                <columns large="10" class="product">
+                    <p id="descripcion">
+                        Samsung Galaxy S10, PAR-LX9, Negro, 64 GB, Amigo Óptimo Plus Sin Frontera, Incluye regalo:
+                        Audífonos
+                    </p>
+                </columns>
+                <columns large="1" class="product">
+                    <p id="costo" class="text-right">
+                        <strong>$16,999.00</strong>
+                    </p>
+                </columns>
+            </row>
+            <row tabindex="0">
+                <columns large="10" class="product">
+                    <p id="descripcion">
+                        Samsung Gear S2 Classic, R732, Negro ,39 mm
+                    </p>
+                </columns>
+                <columns large="1" class="product">
+                    <p id="costo" class="text-right">
+                        <strong>$8,999.00</strong>
+                    </p>
+                </columns>
+            </row>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <spacer size="48"></spacer>
+    <row>
+        <columns small="12" large="11" class="large-offset-1">
+            <hr />
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+
+    <row>
+        <columns small="12" large="10" class="large-offset-1">
+            <row>
+                <columns small="12" large="5" class="PM-col-line">
+                    <h3><strong>Desde BBVA Bancomer</strong></h3>
+                    <p>
+                        1. Dentro del menú "Pagar", seleccione la opción "Servicios" e ingrese el
+                        <strong>
+                            Número de convenio CIE: 1422286.
+                        </strong>
+                    </p>
+                    <p>
+                        2. Ingrese los datos de regístro para concluir con la operación.
+                    </p>
+                    <p>
+                        <strong>
+                            Beneficiario: OPENPAY S.A.P.I. de C.V <br>
+                            Importe: {cantidad} <br>
+                            Concepto de pago: {descripción} <br>
+                            Referencia:{referencia numérica}
+                        </strong>
+                    </p>
+                </columns>
+                <columns large="1"></columns>
+                <columns small="12" large="5" class="PM-col-line">
+                    <h3><strong>Desde cualquier otro banco</strong></h3>
+                    <p>
+                        1. Ingresa a la sección de transferencias y/o pagos a otros bancos y proporciona los datos de la
+                        transferencia:
+                    </p>
+                    <p>
+                        <strong>
+                            Beneficiario: OPENPAY S.A.P.I. de C.V <br>
+                            Banco destino: BBVA Bancomer <br>
+                            Clabe: {012914002014222862} <br>
+                            Concepto de pago: {descripción} <br>
+                            Referencia: {convenio} <br>
+                            Importe: {cantidad}<br>
+                        </strong>
+                    </p>
+                </columns>
+            </row>
+            </colunms>
+            <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row class="footer-file">
+        <columns large="10" small="12" class="large-offset-1">
+            <p class="text-center" tabindex="0">
+                T&iacute;enda en l&iacute;nea Telcel <a href="https://www.telcel.com/"
+                    target="_blank">www.telcel.com</a> <br>
+                &copy; 2019 Radiomovil Dipsa S.A. de C.V. Todos los derechos reservados.
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+</container>
+<spacer size="32"></spacer>
