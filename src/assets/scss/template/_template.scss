@@ -16,6 +16,10 @@ html,
 // Full Width Headers
 .header {
   background: #F2F7F9;
+
+  &-bgray{
+    background: $light-gray;
+  }
 }
 
 .header .columns {
@@ -31,10 +35,11 @@ html,
   padding: 20px;
 }
 
-.header .data p {
+.header-bgray .data p {
   padding: 20px;
   color: #000;
   display: inline-block;
+  font-size: 16px;
 }
 
 .header .container {
@@ -218,7 +223,7 @@ table.file-container {
 }
 
 th.product p {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 th.PM-col-line p {
