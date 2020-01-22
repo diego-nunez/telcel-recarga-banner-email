@@ -17,7 +17,7 @@ html,
 .header {
   background: #F2F7F9;
 
-  &-bgray{
+  &-bgray {
     background: $light-gray;
   }
 }
@@ -226,8 +226,18 @@ th.product p {
   font-size: 18px;
 }
 
-th.PM-col-line p {
+ol {
+  padding-inline-start: 15px;
+}
+
+th.PM-col-line p,
+li {
   line-height: 2;
   padding-right: 30px;
   text-align: justify;
+}
+
+.my-8 {
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
