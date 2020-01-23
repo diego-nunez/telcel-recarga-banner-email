@@ -241,11 +241,19 @@ ol {
 th.PM-col-line p,
 li {
   line-height: 2;
-  padding-right: 30px;
   text-align: justify;
+  @media (min-width: 320px){
+    padding-right: 30px;
+  }
 }
 
 .my-8 {
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+@media (max-width: 375px){
+  table.only-sm{
+    margin-top: 23px;
+  }
 }
