@@ -5,10 +5,10 @@ subject: Ficha de pago en establecimiento de conveniencia
 <spacer size="32"></spacer>
 <container class="file-container">
     <row>
-        <columns large="6" small="12" class="pt-48 pl-60">
+        <columns large="6" small="6" class="pt-48 pl-64">
             <img src="../assets/img/logo-lg.png" alt="Encabezado Telcel" class="float-left">
         </columns>
-        <columns large="6" small="12" class="pt-48 pr-80">
+        <columns large="6" small="5" class="pt-48 pr-80 CS-logo">
             <!-- Aquí va la imagen de la tienda de conveniencia -->
             <!-- <img src="../assets/img/oxxo.png" alt="Encabezado Telcel" class="float-center"> -->
         </columns>
@@ -20,50 +20,58 @@ subject: Ficha de pago en establecimiento de conveniencia
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-
+    <!-- Orden, fecha y correo  -->
     <row class="collapse header-bgray">
-        <columns large="10" small="12" class="large-offset-1 data pb-0" style="padding-left: 44px;">
-            <p class="text-center m-0">
+        <columns large="2" small="3" class="large-offset-1 data pb-0" style="padding-left: 48px;">
+            <p class="text-left m-0">
                 N&uacute;mero de &oacute;rden: <strong>00000000</strong>
-            </p>
-            <p class="text-center m-0">
+        </columns>
+        <columns large="2" small="3" class="data pb-0">
+            <p class="text-left m-0">
                 Fecha y hora: <strong>16-01-2020</strong>
             </p>
-            <p class="text-center m-0">
-                Correo del cliente: <strong>correo@prueba.com</strong>
         </columns>
-
+        <columns large="3" small="3" class="data pb-0">
+            <p class="text-left m-0">
+                Correo del cliente: <strong>correo@prueba.com</strong>
+            </p>
+        </columns>
     </row>
+    <!-- Fin orden, fecha y correo  -->
     <spacer size="16"></spacer>
+    <!-- Referencia y código de barras -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <row>
-                <columns large="6" small="12" valign="middle">
+                <columns large="6" small="6" valign="middle" class="BR-code__ref">
                     <h2>
                         En caso de que el esc&aacute;ner no sea capaz de leer
                         el c&oacute;digo de barras, escribir la referencia tal
                         como se muestra
                     </h2>
                 </columns>
-                <columns large="6" small="12">
+                <columns large="6" small="6" valign="middle" class="BR-code__code">
                     <img src="../assets/img/codigo.jpg" alt="Encabezado Telcel" class="float-left" style="width: 100%;">
                 </columns>
             </row>
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <!-- Fin Referencia y código de barras -->
+
+    <!-- Fecha limite de pago -->
     <row>
-        <columns small="12" large="10" class="large-offset-1 pb-0">
+        <columns small="12" large="10" class="large-offset-1">
             <callout class="callout-date">
                 <row>
-                    <columns large="1" class="show-for-large"></columns>
-                    <columns small="12" large="5" class="br-right pb-0" valign="middle">
+                    <columns small="1" large="1"></columns>
+                    <columns small="5" large="5" class="br-right pb-0" valign="middle">
                         <h3 class="text-left">Fecha l&iacute;mite de pago:</h3>
                         <h3 class="text-left"><strong>30 de septiembre de 2018</strong></h3>
                         <h3 class="text-left">hasta las 23:00 hrs</h3>
                     </columns>
-                    <columns large="2" class="show-for-large"></columns>
-                    <columns small="12" large="5" class="pb-0" valign="middle">
+                    <columns small="1" large="2"></columns>
+                    <columns small="5" large="5" class="pb-0" valign="middle">
                         <h3 class="text-left">Total a pagar/MXN:</h3 class="text-center">
                         <h3 class="text-left"><strong>$8,000.00 MXN</strong></h3>
                         <h3 class="text-left">+ $00.00 de comisi&oacute;n</h3>
@@ -74,63 +82,13 @@ subject: Ficha de pago en establecimiento de conveniencia
         <columns large="1" class="show-for-large"></columns>
     </row>
     <row>
-        <columns large="12" class="pb-0">
+        <columns small="10" large="12" class="pb-0 small-offset-1">
             <p class="text-center">
                 <a href="#"><strong>Consulta el monto m&aacute;ximo por pago de las tiendas afiliadas</strong></a>
             </p>
         </columns>
     </row>
-    <row>
-        <columns small="12" large="11" class="large-offset-1">
-            <hr />
-        </columns>
-        <columns large="1" class="show-for-large"></columns>
-    </row>
-    <row>
-        <columns small="12" large="10" class="large-offset-1">
-            <h2><strong>Detalles de compra</strong></h2>
-            <spacer size="8"></spacer>
-            <row tabindex="0">
-                <columns large="9" class="product">
-                    <p id="descripcion">
-                        Huawei Nova 3, PAR-LX9, Negro, 64 GB, Plan de renta, Incluye regalo: Audífonos
-                    </p>
-                </columns>
-                <columns large="1" class="product">
-                    <p id="costo" class="text-right">
-                        <strong>$10,999.00</strong>
-                    </p>
-                </columns>
-            </row>
-            <row tabindex="0">
-                <columns large="9" class="product">
-                    <p id="descripcion">
-                        Samsung Galaxy S10, PAR-LX9, Negro, 64 GB, Amigo Óptimo Plus Sin Frontera, Incluye regalo:
-                        Audífonos
-                    </p>
-                </columns>
-                <columns large="1" class="product">
-                    <p id="costo" class="text-right">
-                        <strong>$16,999.00</strong>
-                    </p>
-                </columns>
-            </row>
-            <row tabindex="0">
-                <columns large="9" class="product">
-                    <p id="descripcion">
-                        Samsung Gear S2 Classic, R732, Negro ,39 mm
-                    </p>
-                </columns>
-                <columns large="1" class="product">
-                    <p id="costo" class="text-right">
-                        <strong>$8,999.00</strong>
-                    </p>
-                </columns>
-            </row>
-        </columns>
-        <columns large="1" class="show-for-large"></columns>
-    </row>
-    <spacer size="48"></spacer>
+    <!-- Fin fecha limite de pago -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <hr />
@@ -138,12 +96,73 @@ subject: Ficha de pago en establecimiento de conveniencia
         <columns large="1" class="show-for-large"></columns>
     </row>
 
-    <row>
+    <!-- Detalles de compra -->
+    <row tabindex="0">
         <columns small="12" large="10" class="large-offset-1">
+            <h2><strong>Detalles de compra</strong></h2>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <spacer size="8"></spacer>
+    <row tabindex="0">
+        <columns small="8" large="8" class="large-offset-1 product">
+            <p id="descripcion">
+                Huawei Nova 3, PAR-LX9, Negro, 64 GB, Plan de renta, Incluye regalo: Audífonos
+            </p>
+        </columns>
+        <columns small="4" large="1" class="product">
+            <p id="costo" class="text-right">
+                <strong>$10,999.00</strong>
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row tabindex="0">
+        <columns small="8" large="8" class="large-offset-1 product">
+            <p id="descripcion">
+                Samsung Galaxy S10, PAR-LX9, Negro, 64 GB, Amigo Óptimo Plus Sin Frontera, Incluye regalo:
+                Audífonos
+            </p>
+        </columns>
+        <columns small="4" large="1" class="product">
+            <p id="costo" class="text-right">
+                <strong>$16,999.00</strong>
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row tabindex="0">
+        <columns small="8" large="8" class="large-offset-1 product">
+            <p id="descripcion">
+                Samsung Gear S2 Classic, R732, Negro ,39 mm
+            </p>
+        </columns>
+        <columns small="4" large="1" class="product">
+            <p id="costo" class="text-right">
+                <strong>$8,999.00</strong>
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <!-- Fin detalles de compra -->
+    <spacer size="48"></spacer>
+    <row>
+        <columns small="12" large="11" class="large-offset-1">
+            <hr />
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <!-- Instrucciones de Pago -->
+    <row>
+        <columns small="6" large="5" class="large-offset-1 PM-col-line">
             <row>
-                <columns small="12" large="5" class="PM-col-line">
+                <columns small="10" large="10">
                     <h3><strong>C&oacute;mo realizar el pago</strong></h3>
-                    <ol>
+                </columns>
+            </row>
+            <row>
+                <columns small="10" large="8">
+                    <ol  class="only-sm">
                         <li>Acude a cualquier tienda afiliada.</li>
                         <li>Entrega al cajero esta ficha de pago con el c&oacute;digo de
                             barras y menciona que realizar&aacute;s un pago de servicio
@@ -154,9 +173,16 @@ subject: Ficha de pago en establecimiento de conveniencia
                         <li>Conserva el ticket para cualquier alaraci&oacute;n</li>
                     </ol>
                 </columns>
-                <columns large="1"></columns>
-                <columns small="12" large="5" class="PM-col-line">
+            </row>
+        </columns>
+        <columns small="6" large="5" class="PM-col-line">
+            <row>
+                <columns small="10" large="10">
                     <h3><strong>Instrucciones para el cajero</strong></h3>
+                </columns>
+            </row>
+            <row>
+                <columns small="8" large="8">
                     <ol>
                         <li>Ingresa al men&uacute; de Pago de Servicios.</li>
                         <li>Selecciona Paynet.</li>
@@ -168,18 +194,17 @@ subject: Ficha de pago en establecimiento de conveniencia
                     </ol>
                 </columns>
             </row>
-            <row>
-                <columns large="12">
-                    <p>
-                        Para cualquier duda por favor comun&iacute;cate al (55) 5351 7371 en horario de 8:00 am a 9:00
-                        pm de lunes a domingo.
-                    </p>
-                </columns>
-            </row>
         </columns>
-        <columns large="1" class="show-for-large"></columns>
     </row>
-
+    <row>
+        <columns small="11" large="12" class="large-offset-1 PM-col-line">
+            <p>
+                Para cualquier duda por favor comun&iacute;cate al (55) 5351 7371 en horario de 8:00 am a 9:00
+                pm de lunes a domingo.
+            </p>
+        </columns>
+    </row>
+    <!-- Fin Instrucciones de Pago -->
     <row class="footer-file">
         <columns large="10" small="12" class="large-offset-1">
             <p class="text-center" tabindex="0">

@@ -36,7 +36,7 @@ html,
 }
 
 .header-bgray .data p {
-  padding: 20px 0 20px 20px;
+  padding: 16px 0 16px 16px;
   color: #000;
   display: inline-block;
   font-size: 16px;
@@ -210,8 +210,8 @@ th.callout-inner.primary {
   padding-top: 48px !important;
 }
 
-.pl-60 {
-  padding-left: 60px !important;
+.pl-64 {
+  padding-left: 64px !important;
 }
 
 .pr-80 {
@@ -219,7 +219,7 @@ th.callout-inner.primary {
 }
 
 table.file-container {
-  width: 980px !important;
+  width: 976px !important;
 }
 
 .callout-date {
@@ -253,9 +253,10 @@ ol {
 th.PM-col-line p,
 li {
   line-height: 2;
-  text-align: justify;
-  @media (min-width: 320px){
-    padding-right: 30px;
+  text-align: left;
+  padding-right: 80px;
+  @media (max-width: 425px){
+    padding-right: 0px;
   }
 }
 
@@ -264,8 +265,40 @@ li {
   margin-top: 8px;
 }
 
+@media (max-width: 425px){
+  h1 {
+    font-size: 28px;
+  }
+}
+
 @media (max-width: 375px){
-  table.only-sm{
-    margin-top: 23px;
+  ol.only-sm{
+    margin-block-start: -8px;
+  }
+}
+
+.BR-code {
+  &__ref {
+    @media (max-width: 425px){
+      h2 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__code {
+    img {
+      width: 100% !important;
+    }
+  }
+}
+
+.CS-logo {
+  img {
+    width: 80px;
+
+    @media (max-width: 425px) {
+      width: 50% !important;
+    }
   }
 }
