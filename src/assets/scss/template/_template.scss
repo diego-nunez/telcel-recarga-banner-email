@@ -36,10 +36,13 @@ html,
 }
 
 .header-bgray .data p {
-  padding: 20px;
+  padding: 20px 0 20px 20px;
   color: #000;
   display: inline-block;
   font-size: 16px;
+  @media (max-width: 425px){
+    font-size: 12px;
+  }
 }
 
 .header .container {
@@ -225,6 +228,12 @@ table.file-container {
   border-radius: 4px;
   color: #222222;
 
+  @media (max-width: 425px){
+    h3 {
+      font-size: 16px;
+    }
+  }
+
   .br-right {
     border-right: 1px solid $primary-color;
   }
@@ -232,6 +241,9 @@ table.file-container {
 
 th.product p {
   font-size: 18px;
+  @media (max-width: 425px){
+    font-size: 14px;
+  }
 }
 
 ol {
