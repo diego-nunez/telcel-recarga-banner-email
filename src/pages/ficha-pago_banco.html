@@ -1,16 +1,11 @@
 ---
 subject: Ficha de pago en establecimiento de conveniencia
 ---
-
 <spacer size="32"></spacer>
 <container class="file-container">
     <row>
         <columns large="6" small="6" class="pt-48 pl-64">
             <img src="../assets/img/logo-lg.png" alt="Encabezado Telcel" class="float-left">
-        </columns>
-        <columns large="6" small="5" class="pt-48 pr-80 CS-logo">
-            <!-- Aquí va la imagen de la tienda de conveniencia -->
-            <!-- <img src="../assets/img/oxxo.png" alt="Encabezado Telcel" class="float-center"> -->
         </columns>
     </row>
     <spacer size="8"></spacer>
@@ -38,64 +33,45 @@ subject: Ficha de pago en establecimiento de conveniencia
         </columns>
     </row>
     <!-- Fin orden, fecha y correo  -->
-    <spacer size="16"></spacer>
-    <!-- Referencia y código de barras -->
+
+    <spacer size="8"></spacer>
+    <!-- Referencia / Beneficiario -->
     <row>
-        <columns small="12" large="11" class="large-offset-1">
-            <row>
-                <columns large="6" small="6" valign="middle" class="BR-code__ref">
-                    <h2>
-                        En caso de que el esc&aacute;ner no sea capaz de leer
-                        el c&oacute;digo de barras, escribir la referencia tal
-                        como se muestra
-                    </h2>
-                </columns>
-                <columns large="6" small="6" valign="middle" class="BR-code__code">
-                    <img src="../assets/img/codigo.jpg" alt="Encabezado Telcel" class="float-left" style="width: 100%;">
-                </columns>
-            </row>
+        <columns large="6" small="12" class="large-offset-1">
+            <h2 class="my-8">Beneficiario:</h2>
+            <h2><strong>OPENPAY S.A.P.I. de C.V</strong></h2>
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-    <!-- Fin Referencia y código de barras -->
+    <!-- Fin Referencia / Beneficiario -->
 
     <!-- Fecha limite de pago -->
     <row>
-        <columns small="12" large="10" class="large-offset-1">
+        <columns small="12" large="11" class="large-offset-1">
             <callout class="callout-date">
                 <row>
                     <columns small="1" large="1"></columns>
                     <columns small="5" large="5" class="br-right pb-0" valign="middle">
                         <h3 class="text-left">Fecha l&iacute;mite de pago:</h3>
                         <h3 class="text-left"><strong>30 de septiembre de 2018</strong></h3>
-                        <h3 class="text-left">hasta las 23:00 hrs</h3>
                     </columns>
                     <columns small="1" large="2"></columns>
                     <columns small="5" large="5" class="pb-0" valign="middle">
-                        <h3 class="text-left">Total a pagar/MXN:</h3 class="text-center">
-                        <h3 class="text-left"><strong>$8,000.00 MXN</strong></h3>
-                        <h3 class="text-left">+ $00.00 de comisi&oacute;n</h3>
+                        <h3 class="text-left">Total a pagar/MXN:</h3>
+                        <h3 class="text-left"><strong>$100,000.00 MXN</strong></h3>
                     </columns>
                 </row>
             </callout>
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-    <row>
-        <columns small="10" large="12" class="pb-0 small-offset-1">
-            <p class="text-center">
-                <a href="#"><strong>Consulta el monto m&aacute;ximo por pago de las tiendas afiliadas</strong></a>
-            </p>
-        </columns>
-    </row>
-    <!-- Fin fecha limite de pago -->
+    <!-- Fin Fecha limite de pago -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <hr />
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-
     <!-- Detalles de compra -->
     <row tabindex="0">
         <columns small="12" large="10" class="large-offset-1">
@@ -152,66 +128,87 @@ subject: Ficha de pago en establecimiento de conveniencia
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-    <!-- Instrucciones de Pago -->
+
+    <!-- Instrucciones de pago  -->
     <row>
-        <columns small="6" large="5" class="large-offset-1 PM-col-line">
+        <columns small="5" large="5" class="large-offset-1 PM-col-line">
             <row>
                 <columns small="10" large="10">
-                    <h3><strong>C&oacute;mo realizar el pago</strong></h3>
+                    <h3><strong>Desde BBVA Bancomer</strong></h3>
                 </columns>
             </row>
             <row>
                 <columns small="10" large="8">
-                    <ol  class="only-sm">
-                        <li>Acude a cualquier tienda afiliada.</li>
-                        <li>Entrega al cajero esta ficha de pago con el c&oacute;digo de
-                            barras y menciona que realizar&aacute;s un pago de servicio
-                            Paynet.</li>
-                        <li>Realiza el pago en efectivo. (El monto de la comisi&oacute;n
-                            depende de la tienda que elijas: $10 pesos en 7 Eleven.
-                            $8 pesos en las dem&aacute;s tiendas)</li>
-                        <li>Conserva el ticket para cualquier alaraci&oacute;n</li>
-                    </ol>
+                    <p>
+                        1. Dentro del menú "Pagar", seleccione la opción "Servicios" e ingrese el
+                        <strong>
+                            Número de convenio CIE: 1422286.
+                        </strong>
+                    </p>
+                </columns>
+            </row>
+            <row>
+                <columns small="10" large="8">
+                    <p>
+                        2. Ingrese los datos de regístro para concluir con la operación.
+                    </p>
+                </columns>
+            </row>
+            <row>
+                <columns small="10" large="8">
+                    <p>
+                        <strong>
+                            Beneficiario: OPENPAY S.A.P.I. de C.V <br>
+                            Importe: {cantidad} <br>
+                            Concepto de pago: {descripción} <br>
+                            Referencia: {referencia numérica}
+                        </strong>
+                    </p>
                 </columns>
             </row>
         </columns>
         <columns small="6" large="5" class="PM-col-line">
             <row>
                 <columns small="10" large="10">
-                    <h3><strong>Instrucciones para el cajero</strong></h3>
+                    <h3><strong>Desde cualquier otro banco</strong></h3>
                 </columns>
             </row>
             <row>
                 <columns small="8" large="8">
-                    <ol>
-                        <li>Ingresa al men&uacute; de Pago de Servicios.</li>
-                        <li>Selecciona Paynet.</li>
-                        <li>Escanea el c&oacute;digo de barras o ingresa el n&uacute;mero de referencia.</li>
-                        <li>Ingresa la cantidad total a pagar.</li>
-                        <li>Cobra al cliente el monto total m&aacute;s la comisi&oacute;n correspondiente ($10 pesos en
-                            7 Eleven. $8 pesos en las dem&aacute;s tiendas).</li>
-                        <li>Confirma la transacci&oacute;n y entrega el ticket al cliente.</li>
-                    </ol>
+                    <p>
+                        1. Ingresa a la sección de transferencias y/o pagos a otros bancos y proporciona los datos de la
+                        transferencia:
+                    </p>
+                </columns>
+            </row>
+            <row>
+                <columns small="8" large="10">
+                    <p>
+                        <strong>
+                            Beneficiario: OPENPAY S.A.P.I. de C.V <br>
+                            Banco destino: BBVA Bancomer <br>
+                            Clabe: {012914002014222862} <br>
+                            Concepto de pago: {descripción} <br>
+                            Referencia: {convenio} <br>
+                            Importe: {cantidad}<br>
+                        </strong>
+                    </p>
                 </columns>
             </row>
         </columns>
     </row>
-    <row>
-        <columns small="11" large="12" class="large-offset-1 PM-col-line">
-            <p>
-                Para cualquier duda por favor comun&iacute;cate al (55) 5351 7371 en horario de 8:00 am a 9:00
-                pm de lunes a domingo.
-            </p>
-        </columns>
-    </row>
-    <!-- Fin Instrucciones de Pago -->
+    <!-- Fin Instrucciones de pago -->
     <row class="footer-file">
         <columns large="10" small="12" class="large-offset-1">
-            <p class="text-center" tabindex="0">
-                T&iacute;enda en l&iacute;nea Telcel <a href="https://www.telcel.com/"
-                    target="_blank"><strong>www.telcel.com</strong></a> <br>
-                &copy; 2019 Radiomovil Dipsa S.A. de C.V. Todos los derechos reservados.
-            </p>
+            <row>
+                <columns large="12">
+                    <p class="text-center" tabindex="0">
+                        T&iacute;enda en l&iacute;nea Telcel <a href="https://www.telcel.com/"
+                            target="_blank"><strong>www.telcel.com</strong></a> <br>
+                        &copy; 2019 Radiomovil Dipsa S.A. de C.V. Todos los derechos reservados.
+                    </p>
+                </columns>
+            </row>
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>

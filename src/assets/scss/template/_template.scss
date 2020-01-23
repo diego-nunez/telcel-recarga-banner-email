@@ -41,7 +41,7 @@ html,
   display: inline-block;
   font-size: 16px;
   @media (max-width: 425px){
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
@@ -210,16 +210,20 @@ th.callout-inner.primary {
   padding-top: 48px !important;
 }
 
-.pl-64 {
-  padding-left: 64px !important;
-}
 
-.pr-80 {
-  padding-right: 80px !important;
-}
 
 table.file-container {
-  width: 976px !important;
+  @media (min-width: 768px) {
+    width: 976px !important;
+
+    .pl-64 {
+      padding-left: 64px !important;
+    }
+
+    .pr-80 {
+      padding-right: 80px !important;
+    }
+  }
 }
 
 .callout-date {
@@ -230,7 +234,7 @@ table.file-container {
 
   @media (max-width: 425px){
     h3 {
-      font-size: 16px;
+      font-size: 16px !important;
     }
   }
 
@@ -242,7 +246,7 @@ table.file-container {
 th.product p {
   font-size: 18px;
   @media (max-width: 425px){
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 
@@ -256,7 +260,7 @@ li {
   text-align: left;
   padding-right: 80px;
   @media (max-width: 425px){
-    padding-right: 0px;
+    padding-right: 0px !important;
   }
 }
 
@@ -267,7 +271,7 @@ li {
 
 @media (max-width: 425px){
   h1 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 
@@ -281,7 +285,7 @@ li {
   &__ref {
     @media (max-width: 425px){
       h2 {
-        font-size: 14px;
+        font-size: 14px !important;
       }
     }
   }
@@ -293,12 +297,12 @@ li {
   }
 }
 
-.CS-logo {
-  img {
-    width: 80px;
+// .CS-logo {
+//   img {
+//     width: 80px;
 
-    @media (max-width: 425px) {
-      width: 50% !important;
-    }
-  }
-}
+//     @media (max-width: 425px) {
+//       width: 50% !important;
+//     }
+//   }
+// }
