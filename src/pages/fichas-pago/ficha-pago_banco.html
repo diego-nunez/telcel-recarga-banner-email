@@ -4,7 +4,7 @@ subject: Ficha de pago en establecimiento de conveniencia
 <spacer size="32"></spacer>
 <container class="file-container">
     <row>
-        <columns large="6" small="6" class="pt-48 pl-60">
+        <columns large="6" small="6" class="pt-48 pl-64">
             <img src="../assets/img/logo-lg.png" alt="Encabezado Telcel" class="float-left">
         </columns>
     </row>
@@ -15,32 +15,27 @@ subject: Ficha de pago en establecimiento de conveniencia
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-
+    <!-- Orden, fecha y correo  -->
     <row class="collapse header-bgray">
-        <columns large="2" small="3" class="large-offset-1 data pb-0" style="padding-left: 44px;">
-            <p class="text-center m-0">
+        <columns large="2" small="3" class="large-offset-1 data pb-0" style="padding-left: 48px;">
+            <p class="text-left m-0">
                 N&uacute;mero de &oacute;rden: <strong>00000000</strong>
-            <!-- </p>
-            <p class="text-center m-0">
-                Fecha y hora: <strong>16-01-2020</strong>
-            </p>
-            <p class="text-center m-0">
-                Correo del cliente: <strong>correo@prueba.com</strong>
-            </p> -->
-        </columns>
-        <columns large="3" small="3" class="data pb-0">
-            <p class="text-center m-0">
-                Fecha y hora: <strong>16-01-2020</strong>
-            </p>
         </columns>
         <columns large="2" small="3" class="data pb-0">
-            <p class="text-center m-0">
+            <p class="text-left m-0">
+                Fecha y hora: <strong>16-01-2020</strong>
+            </p>
+        </columns>
+        <columns large="3" small="3" class="data pb-0">
+            <p class="text-left m-0">
                 Correo del cliente: <strong>correo@prueba.com</strong>
             </p>
         </columns>
     </row>
+    <!-- Fin orden, fecha y correo  -->
 
     <spacer size="8"></spacer>
+    <!-- Referencia / Beneficiario -->
     <row>
         <columns large="6" small="12" class="large-offset-1">
             <h2 class="my-8">Beneficiario</h2>
@@ -48,6 +43,9 @@ subject: Ficha de pago en establecimiento de conveniencia
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <!-- Fin Referencia / Beneficiario -->
+
+    <!-- Fecha limite de pago -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <callout class="callout-date">
@@ -67,6 +65,7 @@ subject: Ficha de pago en establecimiento de conveniencia
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <!-- Fin Fecha limite de pago -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <hr />
@@ -132,7 +131,7 @@ subject: Ficha de pago en establecimiento de conveniencia
 
     <!-- Instrucciones de pago  -->
     <row>
-        <columns small="5" large="4" class="large-offset-1 PM-col-line">
+        <columns small="5" large="5" class="large-offset-1 PM-col-line">
             <row>
                 <columns small="10" large="10">
                     <h3><strong>Desde BBVA Bancomer</strong></h3>
@@ -168,13 +167,13 @@ subject: Ficha de pago en establecimiento de conveniencia
                 </columns>
             </row>
         </columns>
-        <columns small="6" large="4" class="PM-col-line">
+        <columns small="6" large="5" class="PM-col-line">
             <row>
                 <columns small="10" large="10">
                     <h3><strong>Desde cualquier otro banco</strong></h3>
                 </columns>
             </row>
-            <row class="only-sm">
+            <row>
                 <columns small="8" large="8">
                     <p>
                         1. Ingresa a la sección de transferencias y/o pagos a otros bancos y proporciona los datos de la
@@ -183,71 +182,17 @@ subject: Ficha de pago en establecimiento de conveniencia
                 </columns>
             </row>
             <row>
-                <!-- <columns small="8" large="8"> -->
-                    <!-- <row>
-                        <columns small="8" large="10">
-                            <p>
-                                <strong>
-                                    Beneficiario: OPENPAY S.A.P.I. de C.V
-                                </strong>
-                            </p>
-                        </columns>
-                    </row>
-                    <row>
-                        <columns small="8" large="10">
-                            <p>
-                                <strong>
-                                    Banco destino: BBVA Bancomer
-                                </strong>
-                            </p>
-                        </columns>
-                    </row>
-                    <row>
-                        <columns small="8" large="10">
-                            <p>
-                                <strong>
-                                    Clabe: {012914002014222862} 
-                                </strong>
-                            </p>
-                        </columns>
-                    </row>
-                    <row>
-                        <columns small="8" large="10">
-                            <p>
-                                <strong>
-                                    Concepto de pago: {descripción}
-                                </strong>
-                            </p>
-                        </columns>
-                    </row>
-                    <row>
-                        <columns small="8" large="10">
-                            <p>
-                                <strong>
-                                    Referencia: {convenio}
-                                </strong>
-                            </p>
-                        </columns>
-                    </row> -->
-                    <!-- <row> -->
-                        <columns small="8" large="10">
-                            <!-- <p>
-                                <strong>
-                                    Importe: {cantidad}<br>
-                                </strong>
-                            </p> -->
-                            <p>
-                                <strong>
-                                    Beneficiario: OPENPAY S.A.P.I. de C.V <br>
-                                    Banco destino: BBVA Bancomer <br>
-                                    Clabe: {012914002014222862} <br>
-                                    Concepto de pago: {descripción} <br>
-                                    Referencia: {convenio} <br>
-                                    Importe: {cantidad}<br>
-                                </strong>
-                            </p>
-                        <!-- </columns> -->
-                    <!-- </row> -->
+                <columns small="8" large="10">
+                    <p>
+                        <strong>
+                            Beneficiario: OPENPAY S.A.P.I. de C.V <br>
+                            Banco destino: BBVA Bancomer <br>
+                            Clabe: {012914002014222862} <br>
+                            Concepto de pago: {descripción} <br>
+                            Referencia: {convenio} <br>
+                            Importe: {cantidad}<br>
+                        </strong>
+                    </p>
                 </columns>
             </row>
         </columns>

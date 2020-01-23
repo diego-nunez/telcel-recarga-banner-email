@@ -4,10 +4,10 @@ subject: Ficha de pago en OXXO
 <spacer size="32"></spacer>
 <container class="file-container">
     <row>
-        <columns large="6" small="6" class="pt-48 pl-60">
+        <columns large="6" small="6" class="pt-48 pl-64">
             <img src="../assets/img/logo-lg.png" alt="Encabezado Telcel" class="float-left">
         </columns>
-        <columns large="6" small="6" class="pt-48 pr-80">
+        <columns large="6" small="5" class="pt-48 pr-80 CS-logo">
             <img src="../assets/img/oxxo.png" alt="Encabezado Telcel" class="float-right">
         </columns>
     </row>
@@ -19,34 +19,43 @@ subject: Ficha de pago en OXXO
         <columns large="1" class="show-for-large"></columns>
     </row>
 
+    <!-- Orden, fecha y correo  -->
     <row class="collapse header-bgray">
-        <columns large="10" small="12" class="large-offset-1 data pb-0" style="padding-left: 44px;">
-            <p class="text-center m-0">
+        <columns large="2" small="3" class="large-offset-1 data pb-0" style="padding-left: 48px;">
+            <p class="text-left m-0">
                 N&uacute;mero de &oacute;rden: <strong>00000000</strong>
-            </p>
-            <p class="text-center m-0">
+        </columns>
+        <columns large="2" small="3" class="data pb-0">
+            <p class="text-left m-0">
                 Fecha y hora: <strong>16-01-2020</strong>
             </p>
-            <p class="text-center m-0">
-                Correo del cliente: <strong>correo@prueba.com</strong>
         </columns>
-
+        <columns large="3" small="3" class="data pb-0">
+            <p class="text-left m-0">
+                Correo del cliente: <strong>correo@prueba.com</strong>
+            </p>
+        </columns>
     </row>
+    <!-- Fin orden, fecha y correo  -->
     <spacer size="16"></spacer>
+    <!-- Referencia y código de barras -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <row>
-                <columns large="6" small="6" valign="middle">
+                <columns large="6" small="6" valign="middle" class="BR-code__ref">
                     <h2 class="my-8">Referencia</h2>
                     <h2><strong>0000-0000-0000-00</strong></h2>
                 </columns>
-                <columns large="6" small="6">
-                    <img src="../assets/img/codigo.jpg" alt="Encabezado Telcel" class="float-left" style="width: 100%;">
+                <columns large="6" small="6" valign="middle" class="BR-code__code">
+                    <img src="../assets/img/codigo.jpg" alt="Encabezado Telcel" class="float-left">
                 </columns>
             </row>
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <!-- Fin Referencia y código de barras -->
+
+    <!-- Fecha limite de pago -->
     <row>
         <columns small="12" large="10" class="large-offset-1">
             <callout class="callout-date">
@@ -68,56 +77,62 @@ subject: Ficha de pago en OXXO
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <!-- Fin fecha limite de pago -->
     <row>
         <columns small="12" large="11" class="large-offset-1">
             <hr />
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-    <row>
+    <!-- Detalles de compra -->
+    <row tabindex="0">
         <columns small="12" large="10" class="large-offset-1">
             <h2><strong>Detalles de compra</strong></h2>
-            <spacer size="8"></spacer>
-            <row tabindex="0">
-                <columns large="9" class="product">
-                    <p id="descripcion">
-                        Huawei Nova 3, PAR-LX9, Negro, 64 GB, Plan de renta, Incluye regalo: Audífonos
-                    </p>
-                </columns>
-                <columns large="1" class="product">
-                    <p id="costo" class="text-right">
-                        <strong>$10,999.00</strong>
-                    </p>
-                </columns>
-            </row>
-            <row tabindex="0">
-                <columns large="9" class="product">
-                    <p id="descripcion">
-                        Samsung Galaxy S10, PAR-LX9, Negro, 64 GB, Amigo Óptimo Plus Sin Frontera, Incluye regalo:
-                        Audífonos
-                    </p>
-                </columns>
-                <columns large="1" class="product">
-                    <p id="costo" class="text-right">
-                        <strong>$16,999.00</strong>
-                    </p>
-                </columns>
-            </row>
-            <row tabindex="0">
-                <columns large="9" class="product">
-                    <p id="descripcion">
-                        Samsung Gear S2 Classic, R732, Negro ,39 mm
-                    </p>
-                </columns>
-                <columns large="1" class="product">
-                    <p id="costo" class="text-right">
-                        <strong>$8,999.00</strong>
-                    </p>
-                </columns>
-            </row>
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <spacer size="8"></spacer>
+    <row tabindex="0">
+        <columns small="8" large="8" class="large-offset-1 product">
+            <p id="descripcion">
+                Huawei Nova 3, PAR-LX9, Negro, 64 GB, Plan de renta, Incluye regalo: Audífonos
+            </p>
+        </columns>
+        <columns small="4" large="1" class="product">
+            <p id="costo" class="text-right">
+                <strong>$10,999.00</strong>
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row tabindex="0">
+        <columns small="8" large="8" class="large-offset-1 product">
+            <p id="descripcion">
+                Samsung Galaxy S10, PAR-LX9, Negro, 64 GB, Amigo Óptimo Plus Sin Frontera, Incluye regalo:
+                Audífonos
+            </p>
+        </columns>
+        <columns small="4" large="1" class="product">
+            <p id="costo" class="text-right">
+                <strong>$16,999.00</strong>
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <row tabindex="0">
+        <columns small="8" large="8" class="large-offset-1 product">
+            <p id="descripcion">
+                Samsung Gear S2 Classic, R732, Negro ,39 mm
+            </p>
+        </columns>
+        <columns small="4" large="1" class="product">
+            <p id="costo" class="text-right">
+                <strong>$8,999.00</strong>
+            </p>
+        </columns>
+        <columns large="1" class="show-for-large"></columns>
+    </row>
+    <!-- Fin detalles de compra -->
     <spacer size="48"></spacer>
     <row>
         <columns small="12" large="11" class="large-offset-1">
@@ -125,7 +140,7 @@ subject: Ficha de pago en OXXO
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
-
+    <!-- Instrucciones de pago  -->
     <row>
         <columns small="12" large="10" class="large-offset-1">
             <row>
@@ -150,6 +165,7 @@ subject: Ficha de pago en OXXO
         </columns>
         <columns large="1" class="show-for-large"></columns>
     </row>
+    <!-- Fin Instrucciones de pago  -->
     <row class="footer-file">
         <columns large="10" small="12" class="large-offset-1">
             <p class="text-center" tabindex="0">
