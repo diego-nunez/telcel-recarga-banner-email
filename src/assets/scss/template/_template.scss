@@ -213,7 +213,7 @@ th.callout-inner.primary {
 
 
 table.file-container {
-  @media (min-width: 768px) {
+  // @media (min-width: 768px) {
     width: 976px !important;
 
     .pl-64 {
@@ -223,7 +223,7 @@ table.file-container {
     .pr-80 {
       padding-right: 80px !important;
     }
-  }
+  // }
 }
 
 .callout-date {
@@ -232,11 +232,11 @@ table.file-container {
   border-radius: 4px;
   color: #222222;
 
-  @media (max-width: 425px){
-    h3 {
-      font-size: 16px !important;
-    }
-  }
+  // @media (max-width: 425px){
+  //   h3 {
+  //     font-size: 16px !important;
+  //   }
+  // }
 
   .br-right {
     border-right: 1px solid $primary-color;
@@ -245,9 +245,9 @@ table.file-container {
 
 th.product p {
   font-size: 18px;
-  @media (max-width: 425px){
-    font-size: 14px !important;
-  }
+  // @media (max-width: 425px){
+  //   font-size: 14px !important;
+  // }
 }
 
 ol {
@@ -259,9 +259,9 @@ li {
   line-height: 2;
   text-align: left;
   padding-right: 80px;
-  @media (max-width: 425px){
-    padding-right: 0px !important;
-  }
+  // @media (max-width: 425px){
+  //   padding-right: 0px !important;
+  // }
 }
 
 .my-8 {
@@ -294,6 +294,12 @@ li {
     img {
       width: 100% !important;
     }
+  }
+}
+
+@media only screen and (max-width: 596px){
+  table.body .container {
+    width: 976px !important;
   }
 }
 
